@@ -1,0 +1,6 @@
+spring:
+  application:
+     name: ServiceKeyClient
+  cloud:
+     config:
+        uri: https://config-db7b4a11-845f-44f2-9eaf-90e41dbcb6ca.cfapps.io
