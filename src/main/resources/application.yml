@@ -1,10 +1,16 @@
-
 spring.cloud.config.client:
   oauth2:
     client-id: p-config-server-30607a4f-abbb-4c88-a210-09e656b32850
     client-secret: ib5lqJIQSqiS
     access-token-uri: https://p-spring-cloud-services.uaa.run.pivotal.io/oauth/token
 
-spring:
-  profiles:
-    active: cloud
+#spring:
+#  profiles:
+#    active: cloud
+
+#security:
+#  oauth2:
+#    client:
+#      client-id: p-config-server-30607a4f-abbb-4c88-a210-09e656b32850
+#      client-secret: ib5lqJIQSqiS
+#      access-token-uri: https://p-spring-cloud-services.uaa.run.pivotal.io/oauth/token
