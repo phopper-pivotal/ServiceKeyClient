@@ -1,6 +1,18 @@
 spring:
   application:
-     name: ServiceKeyClient
+    name: ServiceKeyClient
+  profiles:
+    active: dev,local
+
   cloud:
-     config:
-        uri: https://config-db7b4a11-845f-44f2-9eaf-90e41dbcb6ca.cfapps.io
+    config:
+      uri: https://config-db7b4a11-845f-44f2-9eaf-90e41dbcb6ca.cfapps.io
+
+spring.cloud.config.client:
+  oauth2:
+    client-id: p-config-server-30607a4f-abbb-4c88-a210-09e656b32850
+    client-secret: ib5lqJIQSqiS
+    access-token-uri: https://p-spring-cloud-services.uaa.run.pivotal.io/oauth/token
+    clientId: p-config-server-30607a4f-abbb-4c88-a210-09e656b32850
+    clientSecret: ib5lqJIQSqiS
+    accessTokenUri: https://p-spring-cloud-services.uaa.run.pivotal.io/oauth/token
